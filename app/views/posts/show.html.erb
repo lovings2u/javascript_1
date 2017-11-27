@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Contents:</strong>
+  <%= @post.contents %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+
+<script>
+  alertHi();
+  
+  function alertHi() {
+    alert("Hi!");
+  }
+  var alertHello = function() {
+    alert("Hello!")
+  }
+  alertHello();
+</script>
